@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="google-signin-client_id" content="700916934292-9ik27tvcp299a9tocpebq96v7891kn79.apps.googleusercontent.com">
+        <title>
+            SIT 763 htmlpage
+        </title>
+        <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="env.js"></script>
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+     
+     
+    <style>
+        .g-signin2{
+            margin-left: 400;
+            margin-right: 200;
+            margin-top: 200;
+            font-size: 2000pt;
+            size: 300pt;
+        }
+        .data{
+           display:none;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo center">Environment Calculator</a>
+              <ul class="left hide-on-med-and-down">
+                <li><a href="sass.html">Google API integration</a></li>
+              </ul>
+            </div>
+          </nav>
+          <iframe
+    allow="microphone;"
+    width="350"
+    height="750",
+    right: "150",
+    src="https://console.dialogflow.com/api-client/demo/embedded/45426082-1c35-42e8-b8ac-adaa4fb7021c">
+</iframe>
+          <div class="elfsight-app-b82e1dec-923b-4419-b11f-b7bbe46a57ce"></div>
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          <div class="data">
+              <p>Profile Details</p>
+              <img id="pic" class="img-circle" width="150" height="150"/>
+              <p>Email Address</p>
+              <p id="email" class="alert alert-danger"></p>
+              <button onclick="signOut()" class="btn btn-danger">SignOut</button>
+          </div>
+    </body>
+</html>
